@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
-Route::get('/', [ProductController::class, 'prodmasterlist'])->name('products.masterlist');
+Route::get('/productlist', [ProductController::class, 'prodmasterlist'])->name('products.masterlist');
 Route::get('/array', [ProductController::class, 'productarray']);
 Route::get('/with', [ProductController::class, 'prodWith']);
 Route::get('/compact', [ProductController::class, 'prodcompact']);
